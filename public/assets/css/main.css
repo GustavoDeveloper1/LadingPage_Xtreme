@@ -54,10 +54,29 @@
     }
     .footer-header {
         width: 40%;
-        height: 40vh;
+        height: 70vh;
         display: flex;
         margin: 5px auto;
         flex-direction: column;
+        justify-content: center;
+    }
+    .footer-header .vantagem {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-header .vantagem .vantagem-item {
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+        margin: 5px 0;
+        color: #ffffff;
+        font-family: 'Roboto', sans-serif;
+    }
+    .footer-header .vantagem #icon-check {
+        color: #ffff00;
+        font-size: 20px;
     }
     .header .subtitle {
         width: 100%;
@@ -78,7 +97,7 @@
     .btn-area button {
         padding: 10px;
         border: none;
-        margin: auto 0px;
+        margin: auto;
         border-radius: 10px;
         border: 1px solid yellow;
         background-color: transparent;
@@ -217,6 +236,9 @@
         display: flex;
         margin: auto;
         flex-direction: column;
+    }
+    .footer-header .vantagem {
+        display: none;
     }
     .header .subtitle {
         width: 80%;
