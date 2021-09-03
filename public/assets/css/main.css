@@ -86,6 +86,14 @@
         font-size: 2rem;
         color: #ffffff;
     }
+    .header .desc {
+        width: 80%;
+        height: 30px;
+        margin: 0px auto;
+    }
+    .header .desc img {
+        width: 80%;
+    }
     .btn-area {
         width: 100%;
         height: auto;
@@ -218,6 +226,14 @@
     .destaque {
         color: yellow;
     }
+    .header .desc {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .header .desc img {
+        width: 100%;
+    }
     .header .image-central {
         width: 70% !important;
         height: auto;
@@ -258,7 +274,7 @@
         align-items: center;
     }
     .header .btn-area button {
-        padding: 10px;
+        padding: 5px;
         border: none;
         border-radius: 10px;
         border: 1px solid yellow;
