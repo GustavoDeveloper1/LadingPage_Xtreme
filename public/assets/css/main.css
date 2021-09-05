@@ -9,3 +9,135 @@
     --color-background: #033e63;
     --color-text-destak: #ffff00;
 }
+
+@media(min-width:720px) {
+    .header {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-image: url("../img/fundo-abstrato-azul_1393-316.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .header .logo {
+        width: 80%;
+        height: auto;
+        margin: 10px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header .container {
+        width: 100vw;
+        height: 80vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    .header .container .container-header-left {
+        width: 30vw;
+        height: 80vh;
+    }
+    .header .container .container-header-left img {
+        width: 100%;
+    }
+    .header .container .container-header-right {
+        width: 50vw;
+        height: 80vh;
+        margin: 0 auto;
+        right: 0px;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+    }
+    .header .container .container-header-right .text-header-title {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .header .container .container-header-right .text-header-title .title {
+        font-size: 2rem;
+        font-family: 'Roboto', sans-serif;
+        color: #033e63;
+        font-weight: 700;
+    }
+    .section-online {
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+@media(max-width:720px) {
+    .header {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .header .logo {
+        width: 80%;
+        height: auto;
+        margin: 0px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header .logo img {
+        width: 200px;
+    }
+    .header .container {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .header .container .container-header-left {
+        width: 80%;
+        height: 40vh;
+        display: flex;
+        margin: 10px auto;
+    }
+    .header .container .container-header-left img {
+        width: 100%;
+    }
+    .header .container .container-header-right {
+        width: 90%;
+        height: 40%;
+        margin: auto;
+    }
+    .header .container .container-header-right .text-header-title {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .header .container .container-header-right .text-header-title .title {
+        font-size: 1.4rem;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        color: #033e63;
+        font-weight: 700;
+    }
+    .header .container .container-header-right .text-header-title .subtitle {
+        display: none;
+    }
+    .header .container .btn-section {
+        width: 90%;
+        height: 50px;
+        display: flex;
+        margin: auto;
+    }
+    .header .container .btn-section .buynow {
+        width: 100%;
+        border: none;
+        background-color: #0074ba;
+        color: aliceblue;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+}
