@@ -93,10 +93,34 @@
         color: #033e63;
         border: 1px solid #fff;
     }
-    .section-online {
+    .section-reject {
         width: 100%;
         height: 100vh;
+        display: flex;
+        flex-direction: column;
     }
+    .item {
+        width: 100%;
+        height: auto;
+        background-image: url("../img/bg2.png");
+        background-size: cover;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .section-reject .reject-title {
+        width: 90%;
+        height: auto;
+        margin: auto;
+    }
+    .section-reject .reject-title .title {
+        width: 80%;
+        margin: 20px auto;
+        height: auto;
+        font-size: 2.5rem;
+        text-align: center;
+        color: #033e63;
+    }
+    .section-reject .reject-title .title span {}
 }
 
 @media(max-width:720px) {
@@ -170,8 +194,70 @@
     }
     .section-reject {
         width: 100vw;
-        height: 100vh;
+        height: auto;
         display: flex;
         flex-direction: column;
+        align-items: center;
+    }
+    .section-reject .reject-title {
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .section-reject .reject-title .title {
+        width: 100%;
+        height: auto;
+        font-size: 1.6rem;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        color: #033e63;
+    }
+    .section-reject .reject-title .desc-reject {
+        width: 100%;
+        height: auto;
+        font-size: 1.2rem;
+        font-family: 'Roboto', sans-serif;
+        /* font-style: italic; */
+        color: #000000;
+        text-align: justify;
+    }
+    .section-reject .reject-title .text-span {
+        width: 90%;
+        height: auto;
+        font-size: 1rem;
+        text-align: center;
+        font-style: italic;
+    }
+    .section-reject .reject-itens {
+        width: 90%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 10px;
+    }
+    .section-reject .reject-itens .reject-item {
+        width: 100%;
+        height: 300px;
+    }
+    .section-reject .reject-itens .reject-item .img-desc {
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        margin: 10px auto;
+    }
+    .section-reject .reject-itens .reject-item img {
+        width: 100%;
+        height: 100%;
+        border-radius: 100px;
+    }
+    .section-reject .reject-itens .reject-item .descript {
+        width: 90%;
+        height: auto;
+        font-size: 1.4rem;
+        text-align: center;
+        color: #033e63;
+        font-family: 'Roboto', sans-serif;
     }
 }
