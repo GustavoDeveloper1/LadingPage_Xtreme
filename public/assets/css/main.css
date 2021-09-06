@@ -111,6 +111,8 @@
         width: 90%;
         height: auto;
         margin: auto;
+        display: flex;
+        flex-direction: column;
     }
     .section-reject .reject-title .title {
         width: 80%;
@@ -120,7 +122,54 @@
         text-align: center;
         color: #033e63;
     }
-    .section-reject .reject-title .title span {}
+    .section-reject .reject-title .desc-reject {
+        width: 90%;
+        margin: auto;
+        font-size: 1.4rem;
+        color: black;
+        text-align: justify;
+    }
+    .section-reject .reject-title .text-span {
+        font-size: 1.2rem;
+        margin: 10px auto;
+        font-style: italic;
+        color: #033e63;
+        font-weight: bold;
+    }
+    .section-reject .reject-itens {
+        width: 90%;
+        height: auto;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .section-reject .reject-itens .reject-item {
+        width: 250px;
+        height: 300px;
+        margin: 20px auto;
+        background-color: #033e63;
+        border-radius: 15px;
+    }
+    .section-reject .reject-itens .reject-item .img-desc {
+        width: 150px;
+        height: 150px;
+        border-radius: 100px;
+        margin-top: 20px !important;
+        margin: auto;
+    }
+    .section-reject .reject-itens .reject-item .img-desc img {
+        width: 100%;
+        border-radius: 100px;
+        height: 100%;
+    }
+    .section-reject .reject-itens .reject-item .descript {
+        width: 80%;
+        color: #fff;
+        margin: 10px auto;
+        font-size: 1.3rem;
+        text-align: center;
+    }
 }
 
 @media(max-width:720px) {
