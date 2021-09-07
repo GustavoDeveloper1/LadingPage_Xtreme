@@ -274,6 +274,7 @@
     .section-reject .reject-title .text-span {
         width: 90%;
         height: auto;
+        margin: 20px auto;
         font-size: 1rem;
         text-align: center;
         font-style: italic;
@@ -282,6 +283,7 @@
         width: 90%;
         height: auto;
         display: grid;
+        margin: 20px 0;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         gap: 10px;
