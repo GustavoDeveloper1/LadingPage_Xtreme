@@ -309,4 +309,36 @@
         color: #033e63;
         font-family: 'Roboto', sans-serif;
     }
+    .section-causes {
+        width: 100%;
+        height: auto;
+        background-color: #033e63;
+        display: flex;
+        flex-direction: column;
+    }
+    .section-causes .title {
+        width: 90%;
+        height: auto;
+        font-size: 2rem;
+        text-align: center;
+        margin: 10px auto;
+        color: #fff;
+    }
+    .section-causes .causes-text {
+        width: 90%;
+        height: auto;
+        background-image: url("../img/thinking.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 20px auto;
+    }
+    .section-causes .text {
+        width: 100%;
+        text-align: justify;
+        height: auto;
+        font-size: 1.2rem;
+        opacity: 1 !important;
+        color: #000000;
+        font-family: 'Roboto', sans-serif;
+    }
 }
