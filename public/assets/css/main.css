@@ -16,9 +16,6 @@
         height: 100vh;
         display: flex;
         flex-direction: column;
-        background-image: url("../img/bg.png");
-        background-repeat: no-repeat;
-        background-size: 100%;
     }
     .header .logo {
         width: 80%;
@@ -107,6 +104,13 @@
         background-size: 100%;
         background-repeat: no-repeat;
     }
+    .item2 {
+        width: 100%;
+        height: auto;
+        background-image: url("../img/bg.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
     .section-reject .reject-title {
         width: 90%;
         height: auto;
@@ -139,7 +143,7 @@
     .section-reject .reject-itens {
         width: 90%;
         height: auto;
-        margin: auto;
+        margin: 50px auto;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
@@ -169,6 +173,42 @@
         margin: 10px auto;
         font-size: 1.3rem;
         text-align: center;
+    }
+    .section-causes {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        /* background-color: #033e63; */
+    }
+    .section-causes .title {
+        width: 80%;
+        height: auto;
+        margin: 20px auto;
+        text-align: center;
+        font-size: 2.7rem;
+        color: #033e63;
+        font-family: 'Roboto', sans-serif;
+    }
+    .section-causes .causes-text {
+        width: 80%;
+        height: 80vh;
+        margin: 20px auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-image: url("../img/thinking.png");
+        background-position: right;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .section-causes .causes-text .text {
+        width: 100%;
+        height: auto;
+        font-size: 1.5rem;
+        font-family: 'Roboto', sans-serif;
+        text-align: justify;
+        color: black;
     }
 }
 
