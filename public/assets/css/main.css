@@ -30,6 +30,9 @@
     .header .logo img {
         margin-left: 330px;
     }
+    .header .text-aut {
+        display: none;
+    }
     .header .container {
         width: 100vw;
         height: 80vh;
@@ -40,11 +43,15 @@
         position: relative;
     }
     .header .container .container-header-left {
-        width: 30vw;
-        height: 80vh;
+        width: 40vw;
+        height: 70vh;
+        display: flex;
+        justify-content: left;
+        margin-left: -30px !important;
+        align-items: center;
     }
     .header .container .container-header-left img {
-        width: 100%;
+        width: 600px;
     }
     .header .container .container-header-right {
         width: 50vw;
@@ -80,7 +87,7 @@
     }
     .container-header-right .btn-section .buynow {
         width: 100%;
-        height: 100%;
+        height: 70px;
         border: 1px solid #033e63;
         border-radius: 15px;
         background-color: #033e63;
@@ -205,10 +212,6 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
-        background-image: url("../img/thinking.png");
-        background-position: right;
-        background-size: contain;
-        background-repeat: no-repeat;
     }
     .section-causes .causes-text .text {
         width: 100%;
@@ -318,12 +321,13 @@
         height: 100vh;
         display: flex;
         flex-direction: column;
+        background-color: #033e63;
     }
     .header .logo {
         width: 80%;
         height: auto;
         margin: 0px auto;
-        display: flex;
+        display: none;
         align-items: center;
         justify-content: center;
     }
@@ -338,13 +342,32 @@
         justify-content: center;
     }
     .header .container .container-header-left {
-        width: 80%;
-        height: 40vh;
+        width: 90%;
+        height: 50vh;
         display: flex;
+        margin-top: -20px !important;
+        align-items: center;
+        justify-content: center;
         margin: 10px auto;
     }
+    .header .text-aut {
+        width: 80%;
+        height: auto;
+        margin: 10px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header .text-aut .title {
+        font-size: 1.5rem;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        color: #fff;
+        font-weight: 700;
+    }
     .header .container .container-header-left img {
-        width: 100%;
+        width: 400px;
+        margin-left: -50px;
     }
     .header .container .container-header-right {
         width: 90%;
@@ -363,9 +386,15 @@
         text-align: center;
         color: #033e63;
         font-weight: 700;
+        display: none;
     }
     .header .container .container-header-right .text-header-title .subtitle {
-        display: none;
+        font-size: 1.2rem;
+        font-family: 'Roboto', sans-serif;
+        color: blanchedalmond;
+        margin-top: -20px !important;
+        font-style: italic;
+        text-align: center;
     }
     .header .container .btn-section {
         width: 90%;
@@ -375,6 +404,7 @@
     }
     .header .container .btn-section .buynow {
         width: 100%;
+        height: 70px;
         border: none;
         background-color: #0074ba;
         color: aliceblue;
@@ -469,9 +499,9 @@
     .section-causes .causes-text {
         width: 90%;
         height: auto;
-        background-image: url("../img/thinking.png");
+        /* background-image: url("../img/thinking.png");
         background-position: center;
-        background-repeat: no-repeat;
+        background-repeat: no-repeat; */
         margin: 20px auto;
     }
     .section-causes .text {
@@ -555,11 +585,10 @@
     }
     .section-search .header-search {
         width: 90%;
-        height: 20vh;
+        height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
-        border: 1px solid black;
         margin: 10px auto;
     }
     .section-search .header-search .title {
