@@ -16,6 +16,9 @@
         height: 100vh;
         display: flex;
         flex-direction: column;
+        background-image: url("../img/bg.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
     }
     .header .logo {
         width: 80%;
@@ -23,8 +26,9 @@
         margin: 10px auto;
         display: flex;
         align-items: center;
-        /* justify-content: center; */
-        margin-left: 470px;
+    }
+    .header .logo img {
+        margin-left: 330px;
     }
     .header .container {
         width: 100vw;
@@ -154,6 +158,7 @@
         margin: 20px auto;
         background-color: #033e63;
         border-radius: 15px;
+        cursor: pointer;
     }
     .section-reject .reject-itens .reject-item .img-desc {
         width: 150px;
@@ -209,6 +214,59 @@
         font-family: 'Roboto', sans-serif;
         text-align: justify;
         color: black;
+    }
+    .section-beneficios {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        margin: 50px auto;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .section-beneficios .container {
+        width: 50%;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .section-beneficios .body-beneficios {
+        width: 40%;
+        height: 70vh;
+        margin: 10px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .section-beneficios .header-beneficios {
+        width: 90%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
+    }
+    .section-beneficios .header-beneficios h1 {
+        color: #033e63;
+        font-family: 'Roboto', sans-serif;
+        font-size: 2rem;
+        text-align: justify;
+    }
+    .section-beneficios .content-beneficios .text-aut {
+        display: inline;
+    }
+    .section-beneficios .content-beneficios .text-aut1 {
+        display: none;
+    }
+    .section-beneficios .content-beneficios {
+        width: 90%;
+        height: auto;
+        margin: 10px auto;
+    }
+    .section-beneficios .content-beneficios p {
+        color: #000000;
+        font-size: 1.2rem;
+        text-align: justify;
     }
 }
 
@@ -382,5 +440,70 @@
         opacity: 1 !important;
         color: #000000;
         font-family: 'Roboto', sans-serif;
+    }
+    .section-beneficios {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .section-beneficios .header-beneficios {
+        width: 90%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
+    }
+    .section-beneficios .header-beneficios h1 {
+        color: #033e63;
+        font-family: 'Roboto', sans-serif;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .section-beneficios .content-beneficios .text-aut {
+        display: none;
+    }
+    .section-beneficios .content-beneficios {
+        width: 90%;
+        height: auto;
+        margin: 10px auto;
+    }
+    .section-beneficios .content-beneficios p {
+        color: #000000;
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+    .section-beneficios .body-beneficios {
+        width: 90%;
+        height: auto;
+        margin: 10px auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .section-beneficios .body-beneficios .beneficios-bars {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .section-beneficios .body-beneficios .beneficios-bars .txt-bars {
+        color: #000000;
+        font-size: 1.3rem;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+    .section-beneficios .body-beneficios .progress {
+        width: 100%;
+        height: 40px;
+        margin: 10px auto;
+    }
+    .section-beneficios .body-beneficios .beneficios-bars .txt-desk-bars {
+        color: #000000;
+        font-size: 1.3rem;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
     }
 }
