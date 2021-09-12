@@ -104,6 +104,7 @@ a{
         background-color: #fff;
         color: #033e63 !important;
         border: 1px solid #fff;
+        text-decoration: none;
     }
 
     .section-reject {
@@ -112,7 +113,7 @@ a{
         display: flex;
         margin-top: -45px !important;
         flex-direction: column;
-        background-color: #0074ba;
+        /* background-color: #0074ba; */
     }
     .item {
         width: 100%;
@@ -145,7 +146,7 @@ a{
         width: 90%;
         margin: auto;
         font-size: 1.4rem;
-        color: #fff;
+        color: #000;
         text-align: justify;
     }
     .section-reject .reject-title .text-span {
@@ -199,7 +200,7 @@ a{
         height: auto;
         display: flex;
         flex-direction: column;
-        /* background-color: #033e63; */
+        background-color: #033e63;
     }
     .section-causes .title {
         width: 80%;
@@ -207,7 +208,7 @@ a{
         margin: 20px auto;
         text-align: center;
         font-size: 2.7rem;
-        color: #033e63;
+        color: #fff;
         font-family: 'Roboto', sans-serif;
     }
     .section-causes .causes-text {
@@ -224,7 +225,7 @@ a{
         font-size: 1.5rem;
         font-family: 'Roboto', sans-serif;
         text-align: justify;
-        color: black;
+        color: #dadada;
     }
     .section-beneficios {
         width: 100%;
@@ -235,7 +236,7 @@ a{
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        background-color: #000;
+        background-color: #fff;
     }
     .section-beneficios .container {
         width: 50%;
@@ -262,7 +263,7 @@ a{
         margin: 20px auto;
     }
     .section-beneficios .header-beneficios h1 {
-        color: #fff;
+        color: #033e63;
         font-family: 'Roboto', sans-serif;
         font-size: 2.5rem;
         text-align: justify;
@@ -279,7 +280,7 @@ a{
         margin: 10px auto;
     }
     .section-beneficios .content-beneficios p {
-        color: #dadada;
+        color: #0074ba;
         font-size: 1.3rem;
         text-align: justify;
         font-family: 'Lexend', sans-serif;
@@ -298,7 +299,7 @@ a{
         flex-direction: column;
     }
     .section-beneficios .body-beneficios .beneficios-bars .txt-bars {
-        color: #fff;
+        color: #033e63;
         font-size: 1.3rem;
         text-align: center;
         font-family: 'Roboto', sans-serif;
@@ -328,7 +329,7 @@ a{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        /* background-color: #0074ba; */
+        background-color: #0074ba;
     }
     .section-search .search1 {
         width: 90%;
@@ -339,7 +340,7 @@ a{
         justify-content: center;
     }
     .section-search .search1 .title{
-        color: #033e63;
+        color: #fff;
         font-size: 2.5rem;
         width: 60%;
         margin: 0px auto;
@@ -357,7 +358,7 @@ a{
         font-size: 1.4rem;
         text-align: justify;
         font-family: 'Lexend',sans-serif;
-        color: #000000;
+        color: #dadada;
     }
 
     .section-search .search2 {
@@ -370,7 +371,7 @@ a{
         justify-content: center;
     }
     .section-search .search2 .title{
-        color: #033e63;
+        color: #fff;
         font-size: 2.5rem;
         width: 60%;
         margin-top: -20px !important;
@@ -389,7 +390,7 @@ a{
         font-size: 1.4rem;
         text-align: justify;
         font-family: 'Lexend',sans-serif;
-        color: #000;
+        color: #dadada;
     }
 
     .section-howtouse{
@@ -398,7 +399,7 @@ a{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background-color: #033e63;
+        background-color: #fff;
     }
 
     .section-howtouse .header-howtouse{
@@ -410,7 +411,7 @@ a{
         justify-content: center;
     }
     .section-howtouse .header-howtouse .title{
-        color: #fff;
+        color: #033e63;
         font-size: 2.5rem;
         font-family: 'Roboto',sans-serif;
     }
@@ -432,7 +433,7 @@ a{
     }
     .section-howtouse .container-howtouse .howtouse-passto .txt-howtouse{
         font-size: 1.3rem;
-        color: #dadada;
+        color: #066fb1;
     }
 
     .section-howtouse .container-howtouse .howtouse-imgbtn{
@@ -462,8 +463,8 @@ a{
         padding: 30px 50px;
         border: 1px solid #033e63;
         border-radius: 15px;
-        background-color: #fff;
-        color: #033e63 !important;
+        background-color: #033e63;
+        color: #fff !important;
         font-size: 1.3rem;
         font-weight: 700;
         margin: 0px auto;
@@ -472,7 +473,8 @@ a{
     
     .section-howtouse .container-howtouse .howtouse-imgbtn .btn-section .buynow:hover{
         background-color: white;
-        color:#033e63;
+        color:#033e63 !important;
+        text-decoration: none;
     }
 
     .section-composition{
@@ -480,6 +482,7 @@ a{
         height: auto;
         flex-direction: column;
         align-items: center;
+        background-color: #033e63;
     }
 
     .section-composition .header-composition{
@@ -491,7 +494,7 @@ a{
         align-items: center;
     }
     .section-composition .header-composition .title{
-        color: #033e63;
+        color: #fff;
         font-size: 2.5rem;
         font-family: 'Roboto',sans-serif;
         font-weight: 700;
