@@ -10,11 +10,45 @@
     --color-text-destak: #ffff00;
 }
 
-.text-desc{
+.text-desc {
     color: #e6122e;
 }
-a{
+
+a {
     text-decoration: none;
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes tada {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+    10%,
+    20% {
+        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    }
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+    40%,
+    60%,
+    80% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.tada {
+    animation-name: tada;
 }
 
 @media(min-width:920px) {
@@ -36,7 +70,6 @@ a{
         justify-content: center;
         align-items: center;
     }
-
     .header .text-aut {
         display: none;
     }
@@ -63,7 +96,7 @@ a{
         margin: 0 auto;
         right: 0px;
         display: flex;
-        position: absolute;
+        position: relative;
         flex-direction: column;
     }
     .header .container .container-header-right .text-header-title {
@@ -95,7 +128,7 @@ a{
         border: 1px solid #033e63;
         border-radius: 15px;
         background-color: #033e63;
-        color: #fff !important;
+        color: #fff;
         font-size: 1.3rem;
         font-weight: 700;
         cursor: pointer;
@@ -106,12 +139,25 @@ a{
         border: 1px solid #fff;
         text-decoration: none;
     }
-
+    .header .icon-header {
+        width: 100%;
+        margin-top: 40px !important;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header .icon-header #icon-header-icon {
+        transform: rotate(90deg);
+        margin-top: 50px;
+        font-size: 2rem;
+        color: #000;
+    }
     .section-reject {
         width: 100%;
         height: auto;
         display: flex;
-        margin-top: -45px !important;
+        margin-top: 45px !important;
         flex-direction: column;
         /* background-color: #0074ba; */
     }
@@ -339,28 +385,27 @@ a{
         flex-direction: column;
         justify-content: center;
     }
-    .section-search .search1 .title{
+    .section-search .search1 .title {
         color: #fff;
         font-size: 2.5rem;
         width: 60%;
         margin: 0px auto;
         text-align: center;
-        font-family: 'Roboto',sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-weight: 700;
     }
-    .section-search .search1 .container-search{
+    .section-search .search1 .container-search {
         width: 90%;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-    .section-search .search1 .container-search .text-search{
+    .section-search .search1 .container-search .text-search {
         font-size: 1.4rem;
         text-align: justify;
-        font-family: 'Lexend',sans-serif;
+        font-family: 'Lexend', sans-serif;
         color: #dadada;
     }
-
     .section-search .search2 {
         width: 90%;
         height: auto;
@@ -370,30 +415,29 @@ a{
         flex-direction: column;
         justify-content: center;
     }
-    .section-search .search2 .title{
+    .section-search .search2 .title {
         color: #fff;
         font-size: 2.5rem;
         width: 60%;
         margin-top: -20px !important;
         margin: 0px auto;
         text-align: center;
-        font-family: 'Roboto',sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-weight: 700;
     }
-    .section-search .search2 .container-search{
+    .section-search .search2 .container-search {
         width: 90%;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-    .section-search .search2 .container-search .text-search{
+    .section-search .search2 .container-search .text-search {
         font-size: 1.4rem;
         text-align: justify;
-        font-family: 'Lexend',sans-serif;
+        font-family: 'Lexend', sans-serif;
         color: #dadada;
     }
-
-    .section-howtouse{
+    .section-howtouse {
         width: 100%;
         height: 100vh;
         display: flex;
@@ -401,8 +445,7 @@ a{
         justify-content: center;
         background-color: #fff;
     }
-
-    .section-howtouse .header-howtouse{
+    .section-howtouse .header-howtouse {
         width: 90%;
         height: auto;
         display: flex;
@@ -410,13 +453,12 @@ a{
         margin: 20px auto;
         justify-content: center;
     }
-    .section-howtouse .header-howtouse .title{
+    .section-howtouse .header-howtouse .title {
         color: #033e63;
         font-size: 2.5rem;
-        font-family: 'Roboto',sans-serif;
+        font-family: 'Roboto', sans-serif;
     }
-
-    .section-howtouse .container-howtouse{
+    .section-howtouse .container-howtouse {
         width: 90%;
         height: auto;
         display: flex;
@@ -424,41 +466,38 @@ a{
         align-items: center;
         margin: 0px auto;
     }
-
-    .section-howtouse .container-howtouse .howtouse-passto{
+    .section-howtouse .container-howtouse .howtouse-passto {
         width: 40%;
         height: auto;
         display: flex;
         flex-direction: column;
     }
-    .section-howtouse .container-howtouse .howtouse-passto .txt-howtouse{
+    .section-howtouse .container-howtouse .howtouse-passto .txt-howtouse {
         font-size: 1.3rem;
         color: #066fb1;
     }
-
-    .section-howtouse .container-howtouse .howtouse-imgbtn{
+    .section-howtouse .container-howtouse .howtouse-imgbtn {
         width: 50%;
         height: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    .section-howtouse .container-howtouse .howtouse-imgbtn .howtouse-imgproduct{
+    .section-howtouse .container-howtouse .howtouse-imgbtn .howtouse-imgproduct {
         width: 60%;
         height: 400px;
         margin: 0px auto;
     }
-    .section-howtouse .container-howtouse .howtouse-imgbtn .howtouse-imgproduct img{
+    .section-howtouse .container-howtouse .howtouse-imgbtn .howtouse-imgproduct img {
         width: 100%;
         height: 100%;
     }
-    .section-howtouse .container-howtouse .howtouse-imgbtn .btn-section{
+    .section-howtouse .container-howtouse .howtouse-imgbtn .btn-section {
         width: auto;
         height: auto;
-        margin: 50px  auto;
+        margin: 50px auto;
     }
-
-    .section-howtouse .container-howtouse .howtouse-imgbtn .btn-section .buynow{
+    .section-howtouse .container-howtouse .howtouse-imgbtn .btn-section .buynow {
         width: 100%;
         padding: 30px 50px;
         border: 1px solid #033e63;
@@ -470,22 +509,19 @@ a{
         margin: 0px auto;
         cursor: pointer;
     }
-    
-    .section-howtouse .container-howtouse .howtouse-imgbtn .btn-section .buynow:hover{
+    .section-howtouse .container-howtouse .howtouse-imgbtn .btn-section .buynow:hover {
         background-color: white;
-        color:#033e63 !important;
+        color: #033e63 !important;
         text-decoration: none;
     }
-
-    .section-composition{
+    .section-composition {
         width: 100%;
         height: auto;
         flex-direction: column;
         align-items: center;
         background-color: #033e63;
     }
-
-    .section-composition .header-composition{
+    .section-composition .header-composition {
         width: 90%;
         height: 60px;
         margin: 30px auto;
@@ -493,14 +529,13 @@ a{
         justify-content: center;
         align-items: center;
     }
-    .section-composition .header-composition .title{
+    .section-composition .header-composition .title {
         color: #fff;
         font-size: 2.5rem;
-        font-family: 'Roboto',sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-weight: 700;
     }
-
-    .section-composition .composition-container{
+    .section-composition .composition-container {
         width: 100%;
         height: auto;
         display: flex;
@@ -508,19 +543,19 @@ a{
         margin: 0px auto;
         align-items: center;
     }
-    .section-composition .composition-container .composition-item{
+    .section-composition .composition-container .composition-item {
         width: 100%;
         height: auto;
         display: flex;
         justify-content: space-around;
         margin: 20px auto;
     }
-    .section-composition .composition-container .composition-item .img-composition{
+    .section-composition .composition-container .composition-item .img-composition {
         width: 250px;
         height: 250px;
         border-radius: 200px;
     }
-    .section-composition .composition-container .composition-item .img-composition img{
+    .section-composition .composition-container .composition-item .img-composition img {
         width: 100%;
         height: 100%;
         border-radius: 200px;
@@ -532,21 +567,18 @@ a{
         flex-direction: column;
         justify-content: center;
     }
-
-    .section-composition .composition-container .composition-item-container .subtitulo{
+    .section-composition .composition-container .composition-item-container .subtitulo {
         font-size: 1.6rem;
         color: #0074ba;
         font-weight: 700;
-        font-family: 'Roboto',sans-serif;
+        font-family: 'Roboto', sans-serif;
     }
-
-    .section-composition .composition-container .composition-item-container  p{
-        color: #b4b4b4 ;
+    .section-composition .composition-container .composition-item-container p {
+        color: #b4b4b4;
         font-size: 1.3rem;
         text-align: justify;
     }
-
-    .section-sale{
+    .section-sale {
         width: 100%;
         height: 100vh;
         display: flex;
@@ -561,20 +593,18 @@ a{
         justify-content: center;
         align-items: center;
     }
-
-    .section-sale .header-sale h1{
+    .section-sale .header-sale h1 {
         color: #033e63;
         font-size: 2.4rem;
-        font-family: 'Roboto',sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-weight: 700;
     }
-    .section-sale .header-sale .subtitle{
+    .section-sale .header-sale .subtitle {
         color: #7e7d7d;
         font-size: 1.3rem;
         font-weight: 700;
         font-style: italic;
     }
-
     .section-sale .container-sale {
         width: 90%;
         height: 80vh;
@@ -584,7 +614,7 @@ a{
         grid-template-rows: 1fr;
         gap: 20px;
     }
-    .section-sale .container-sale .sale-item{
+    .section-sale .container-sale .sale-item {
         width: 300px;
         height: auto;
         border: 5px solid #033e63;
@@ -593,21 +623,19 @@ a{
         /* justify-content: center; */
         align-items: center;
     }
-    .section-sale .container-sale .sale-item .header-sale-item{
+    .section-sale .container-sale .sale-item .header-sale-item {
         width: 90%;
         height: auto;
-
         margin: 10px auto;
         display: flex;
         flex-direction: column;
         /* justify-content: center; */
     }
-
-    .section-sale .container-sale .sale-item .header-sale-item .title{
+    .section-sale .container-sale .sale-item .header-sale-item .title {
         color: #033e63;
         font-size: 2.2rem;
         text-align: center;
-        font-family: 'Roboto',sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-weight: 700;
     }
     .section-sale .container-sale .sale-item .header-sale-item .subtitle {
@@ -617,7 +645,6 @@ a{
         font-weight: 600;
         font-style: italic;
     }
-
     .section-sale .container-sale .sale-item .image-product {
         width: 100%;
         height: 30vh;
@@ -625,16 +652,14 @@ a{
         justify-content: center;
         align-items: center;
     }
-    .section-sale .container-sale .sale-item .image-product img{
+    .section-sale .container-sale .sale-item .image-product img {
         width: 80%;
         height: 80%;
     }
-
     .section-sale .container-sale .sale-item .price-product {
         width: 90%;
         height: 20vh;
     }
-
     .section-sale .container-sale .sale-item .price-product {
         width: 90%;
         height: 20vh;
@@ -643,50 +668,43 @@ a{
         justify-content: center;
         align-items: center;
     }
-
-
     .section-sale .container-sale .sale-item .price-product .price1 {
         color: #000;
         font-size: 1.5rem;
-        font-family: 'Roboto',sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-weight: 700;
     }
-    .section-sale .container-sale .sale-item .price-product .price1 b{
+    .section-sale .container-sale .sale-item .price-product .price1 b {
         text-decoration: line-through;
         color: #e6122e;
     }
-
     .section-sale .container-sale .sale-item .price-product .price2 {
         color: #033e63;
         font-size: 1.7rem;
-        font-family: 'Roboto',sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-weight: 700;
     }
-
     .section-sale .container-sale .sale-item .price-product .sub-price {
         color: #749cb4;
         font-size: 1.2rem;
-        font-family: 'Roboto',sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-weight: normal;
         font-style: italic;
     }
-
-    .section-sale .container-sale .btn-buy{
+    .section-sale .container-sale .btn-buy {
         width: auto;
         height: 20vh;
         display: flex;
-        flex-direction:column ;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-
-    .section-sale .container-sale .btn-buy .buy{
-        padding: 30px 40px ;
+    .section-sale .container-sale .btn-buy .buy {
+        padding: 30px 40px;
         background-color: #033e63;
         color: #fff;
         border-radius: 10px;
     }
-
 }
 
 @media(max-width:920px) {
@@ -740,15 +758,13 @@ a{
         color: #fff;
         font-weight: 700;
     }
-
     .header .text-aut .subtitle {
         font-size: 1.4rem;
-        font-family: 'Roboto',sans-serif;
+        font-family: 'Roboto', sans-serif;
         text-align: center;
         color: #fff;
         font-weight: 700;
     }
-
     .header .container .container-header-left img {
         width: 400px;
         margin-left: -50px;
@@ -789,10 +805,10 @@ a{
         align-items: center;
         margin: 20px auto;
     }
-    .header .container .btn-section .buynow{
+    .header .container .btn-section .buynow {
         width: 100%;
         height: auto;
-        padding:20px ;
+        padding: 20px;
         text-align: center;
         border: 1px solid #033e63;
         border-radius: 15px;
@@ -803,7 +819,18 @@ a{
         margin: 0px auto;
         cursor: pointer;
     }
-
+    .header .icon-header {
+        width: 100%;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header .icon-header #icon-header-icon {
+        transform: rotate(90deg);
+        font-size: 2rem;
+        color: #000;
+    }
     .section-reject {
         width: 100vw;
         height: auto;
@@ -815,6 +842,7 @@ a{
         width: 90%;
         height: auto;
         display: flex;
+        margin-top: 45px;
         flex-direction: column;
     }
     .section-reject .reject-title .title {
@@ -971,7 +999,7 @@ a{
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
     }
-    .section-search{
+    .section-search {
         width: 100%;
         height: auto;
         display: flex;
@@ -985,10 +1013,10 @@ a{
         flex-direction: column;
         margin: 10px auto;
     }
-    .section-search .search1 .title{
+    .section-search .search1 .title {
         font-size: 2rem;
         color: #033e63;
-        font-family: 'Roboto',sans-serif;
+        font-family: 'Roboto', sans-serif;
         text-align: center;
         font-weight: 700;
     }
@@ -998,25 +1026,23 @@ a{
         display: flex;
         flex-direction: column;
     }
-    .section-search .search1 .container-search .text-search{
+    .section-search .search1 .container-search .text-search {
         width: 90%;
         height: auto;
         margin: auto;
     }
-    .section-search .search1 .container-search .text-search p{
+    .section-search .search1 .container-search .text-search p {
         color: #fff;
         text-align: justify;
     }
-
-    .section-search .search1 .container-search .img-graphic-search{
+    .section-search .search1 .container-search .img-graphic-search {
         width: 80%;
         height: auto;
         margin: 10px auto;
     }
-    .section-search .search1 .container-search .img-graphic-search img{
+    .section-search .search1 .container-search .img-graphic-search img {
         width: 100%;
     }
-
     .section-search .search2 {
         width: 90%;
         height: auto;
@@ -1024,10 +1050,10 @@ a{
         flex-direction: column;
         margin: 10px auto;
     }
-    .section-search .search2 .title{
+    .section-search .search2 .title {
         font-size: 2rem;
         color: #033e63;
-        font-family: 'Roboto',sans-serif;
+        font-family: 'Roboto', sans-serif;
         text-align: center;
         font-weight: 700;
     }
@@ -1037,50 +1063,47 @@ a{
         display: flex;
         flex-direction: column;
     }
-    .section-search .search2 .container-search .text-search{
+    .section-search .search2 .container-search .text-search {
         width: 90%;
         height: auto;
         margin: auto;
     }
-    .section-search .search2 .container-search .text-search p{
+    .section-search .search2 .container-search .text-search p {
         color: #fff;
         text-align: justify;
     }
-
-    .section-search .search2 .container-search .img-graphic-search{
+    .section-search .search2 .container-search .img-graphic-search {
         width: 80%;
         height: auto;
         margin: 10px auto;
     }
-    .section-search .search2 .container-search .img-graphic-search img{
+    .section-search .search2 .container-search .img-graphic-search img {
         width: 100%;
     }
-
-    .section-howtouse{
+    .section-howtouse {
         width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
     }
-    .section-howtouse .header-howtouse{
+    .section-howtouse .header-howtouse {
         width: 90%;
         height: 15vh;
         margin: 10px auto;
     }
-    .section-howtouse .header-howtouse .title{
+    .section-howtouse .header-howtouse .title {
         color: #033e63;
         font-size: 2rem;
         font-weight: 700;
-        font-family: 'Roboto',sans-serif;
+        font-family: 'Roboto', sans-serif;
         text-align: center;
     }
-    .section-howtouse .container-howtouse{
+    .section-howtouse .container-howtouse {
         width: 90%;
         height: auto;
         margin: 0px auto;
-
     }
-    .section-howtouse .container-howtouse .howtouse-passto{
+    .section-howtouse .container-howtouse .howtouse-passto {
         width: 100%;
         height: auto;
         display: flex;
@@ -1089,14 +1112,12 @@ a{
         /* border: 1px solid black; */
         padding: 5px;
     }
-
-    .section-howtouse .container-howtouse .howtouse-passto .txt-howtouse{
+    .section-howtouse .container-howtouse .howtouse-passto .txt-howtouse {
         color: #033e63;
         font-size: 1.1rem;
         text-align: justify;
     }
-
-    .section-howtouse .container-howtouse .howtouse-imgproduct{
+    .section-howtouse .container-howtouse .howtouse-imgproduct {
         width: 80%;
         height: auto;
         display: flex;
@@ -1104,21 +1125,20 @@ a{
         margin: 0px auto;
         justify-content: center;
     }
-    .section-howtouse .container-howtouse .howtouse-imgproduct img{
+    .section-howtouse .container-howtouse .howtouse-imgproduct img {
         width: 100%;
         height: 100%;
     }
-
-    .section-howtouse .container-howtouse  .btn-section {
+    .section-howtouse .container-howtouse .btn-section {
         width: auto;
         height: auto;
         display: flex;
         margin: 20px auto;
     }
-    .section-howtouse .container-howtouse  .btn-section .buynow {
+    .section-howtouse .container-howtouse .btn-section .buynow {
         width: 100%;
         height: auto;
-        padding:20px ;
+        padding: 20px;
         text-align: center;
         border: 1px solid #033e63;
         border-radius: 15px;
@@ -1129,9 +1149,7 @@ a{
         margin: 0px auto;
         cursor: pointer;
     }
-
-
-    .section-composition{
+    .section-composition {
         width: 100%;
         height: auto;
         display: flex;
@@ -1139,7 +1157,7 @@ a{
         align-items: center;
         background-color: #000000;
     }
-    .section-composition .header-composition{
+    .section-composition .header-composition {
         width: 90%;
         margin-top: 20px !important;
         margin: 0px auto;
@@ -1147,30 +1165,28 @@ a{
         justify-content: center;
         align-items: center;
     }
-    .section-composition .header-composition .title{
+    .section-composition .header-composition .title {
         font-size: 2.2rem;
-        font-family: 'Roboto',sans-serif;
+        font-family: 'Roboto', sans-serif;
         text-align: center;
         color: #066fb1;
         font-weight: 700;
     }
-    .section-composition .composition-container{
+    .section-composition .composition-container {
         width: 90%;
         height: auto;
         display: flex;
         margin-top: 20px;
         flex-direction: column;
     }
-
-    .section-composition .composition-container .composition-item{
+    .section-composition .composition-container .composition-item {
         width: 100%;
         height: auto;
         display: flex;
         margin: 20px auto;
         flex-direction: column;
     }
-
-    .section-composition .composition-container .composition-item .img-composition{
+    .section-composition .composition-container .composition-item .img-composition {
         width: 250px;
         height: 250px;
         display: flex;
@@ -1178,41 +1194,37 @@ a{
         justify-content: center;
         border-radius: 250px;
     }
-    .section-composition .composition-container .composition-item .img-composition img{
+    .section-composition .composition-container .composition-item .img-composition img {
         width: 100%;
         border-radius: 200px;
     }
-
     .section-composition .composition-container .composition-item .composition-item-container {
         width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
     }
-    .section-composition .composition-container .composition-item .composition-item-container .subtitulo{
+    .section-composition .composition-container .composition-item .composition-item-container .subtitulo {
         color: #066fb1;
         font-size: 1.5rem;
-        font-family: 'Roboto',sans-serif;
+        font-family: 'Roboto', sans-serif;
         text-align: center;
         margin: 10px auto;
     }
-
     .section-composition .composition-container .composition-item .composition-item-container .texto {
-        color: #dadada ;
+        color: #dadada;
         text-align: justify;
         font-size: 1.2rem;
-        font-family: 'Lexend',sans-serif;
+        font-family: 'Lexend', sans-serif;
     }
-
-    .section-sale{
+    .section-sale {
         width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
-    .section-sale .header-sale{
+    .section-sale .header-sale {
         width: 90%;
         height: auto;
         margin: 20px auto;
@@ -1220,31 +1232,28 @@ a{
         flex-direction: column;
         justify-content: center;
     }
-
-    .section-sale .header-sale h1{
+    .section-sale .header-sale h1 {
         font-size: 2.2rem;
         color: #033e63;
-        font-family: 'Roboto',sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-weight: 700;
         text-align: center;
     }
-
-    .section-sale .header-sale .subtitle{
+    .section-sale .header-sale .subtitle {
         font-size: 1rem;
-        font-family: 'Lexend',sans-serif;
+        font-family: 'Lexend', sans-serif;
         font-style: italic;
         text-align: center;
         color: #b4b4b4;
     }
-
-    .section-sale .container-sale{
+    .section-sale .container-sale {
         width: 90%;
         height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .section-sale .container-sale .sale-item{
+    .section-sale .container-sale .sale-item {
         width: 100%;
         border: 5px solid #033e63;
         height: 100vh;
@@ -1255,7 +1264,7 @@ a{
         border-radius: 20px;
         /* justify-content: center; */
     }
-    .section-sale .container-sale .sale-item .header-sale-item{
+    .section-sale .container-sale .sale-item .header-sale-item {
         width: 80%;
         height: 20vh;
         display: flex;
@@ -1264,21 +1273,18 @@ a{
         /* border: 1px solid; */
         justify-content: center;
     }
-
-    .section-sale .container-sale .sale-item .header-sale-item .title{
+    .section-sale .container-sale .sale-item .header-sale-item .title {
         font-size: 2.3rem;
         color: #033e63;
-        font-family: 'Roboto',sans-serif;
+        font-family: 'Roboto', sans-serif;
     }
-
     .section-sale .container-sale .sale-item .header-sale-item .subtitle {
         color: #066fb1;
         /* margin-top: -20px !important; */
         font-size: 1.3rem;
         font-style: italic;
     }
-
-    .section-sale .container-sale .sale-item .image-product{
+    .section-sale .container-sale .sale-item .image-product {
         width: 90%;
         height: 40vh;
         display: flex;
@@ -1286,13 +1292,11 @@ a{
         /* align-items: center;
         justify-content: center; */
     }
-
-    .section-sale .container-sale .sale-item .image-product img{
+    .section-sale .container-sale .sale-item .image-product img {
         width: 80%;
         height: 90%;
         margin: auto;
     }
-
     .section-sale .container-sale .sale-item .price-product {
         width: 90%;
         height: 20vh;
@@ -1301,45 +1305,39 @@ a{
         justify-content: center;
         align-items: center;
     }
-
-
     .section-sale .container-sale .sale-item .price-product .price1 {
         color: #000;
         font-size: 1.5rem;
-        font-family: 'Roboto',sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-weight: 700;
     }
-    .section-sale .container-sale .sale-item .price-product .price1 b{
+    .section-sale .container-sale .sale-item .price-product .price1 b {
         text-decoration: line-through;
         color: #e6122e;
     }
-
     .section-sale .container-sale .sale-item .price-product .price2 {
         color: #033e63;
         font-size: 1.7rem;
-        font-family: 'Roboto',sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-weight: 700;
     }
-
     .section-sale .container-sale .sale-item .price-product .sub-price {
         color: #749cb4;
         font-size: 1.2rem;
-        font-family: 'Roboto',sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-weight: normal;
         font-style: italic;
     }
-
-    .section-sale .container-sale .btn-buy{
+    .section-sale .container-sale .btn-buy {
         width: auto;
         height: 20vh;
         display: flex;
-flex-direction:column ;
-justify-content: center;
-align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-
-    .section-sale .container-sale .btn-buy .buy{
-        padding: 20px 30px ;
+    .section-sale .container-sale .btn-buy .buy {
+        padding: 20px 30px;
         background-color: #033e63;
         color: #fff;
         border-radius: 10px;
