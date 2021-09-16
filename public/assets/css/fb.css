@@ -4,4 +4,40 @@
     box-sizing: border-box;
 }
 
-.fb-coments {}
+.fb-coments {
+    width: 100%;
+    height: 100vh;
+}
+
+.fbcoments-header {
+    width: 80%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.fb-coments .fbcoments-header .image-header {
+    width: 30%;
+    height: 60px;
+}
+
+.fb-coments .fbcoments-header .image-header img {
+    width: 50%;
+    height: 100%;
+    margin: 0px auto;
+}
+
+.fb-coments .fbcoments-header .fbcoments-content-input {
+    width: 70%;
+    height: 60px;
+}
+
+.fb-coments .fbcoments-header .fbcoments-content-input imput {
+    width: 100%;
+    height: 100%;
+}
+
+.fb-coments .fbcoments-header .fbcoments-content-input imput::placeholder {
+    font-size: 1rem;
+}
