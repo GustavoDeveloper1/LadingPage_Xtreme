@@ -15,7 +15,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
     <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../public/assets/css/fb.css">
 </head>
 
 <body>
@@ -286,6 +285,97 @@
         </div>
     </div>
 
+    <div class="fb-coments">
+            <ul class="coment-header">
+                <li class="coment-header-item"><i class="far fa-thumbs-up" id="likeicon"></i>Curtir</li>
+                <li class="coment-header-item"><i class="fas fa-comment-alt"></i>Comentar</li>
+                <li class="coment-header-item"><i class="fas fa-share" id="shareicon"></i>Compartilhar</li>
+            </ul>
+
+            <div class="header-fbcoments">
+                <div class="image-header">
+                    <img src="../public/assets/img/fb1.jpg" alt="">
+                </div>
+                <div class="container-header">
+                    <!-- <span class="name-fbcoments">Roberto Carlos</span> -->
+                    <div class="input-header-coment">
+                        <input type="text" name="text" id="textcoment" placeholder="Adicione um comentário..." disabled>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fbcoments">
+                <div class="coment-group">
+                    <div class="img-coment-group">
+                        <img src="../public/assets/img/fb1.jpg" alt="">
+                    </div>
+                    <div class="container-coment-group">
+                        <span class="name-fbcoments">Roberto Carlos</span>
+                        <span class="coment-fbcoments">O melhor Produto que já vi! Amei<i class="fas fa-heart"></i> </span>
+                        <ul class="icons-sectioncoment">
+                            <li class="item-icon">Curtir</li>
+                            <li class="item-icon">Responder</li>
+                            <li class="item-icon"><i class="far fa-thumbs-up" id="likeicon"></i>4</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="coment-group">
+                    <div class="img-coment-group">
+                        <img src="../public/assets/img/fb2.jpg" alt="">
+                    </div>
+                    <div class="container-coment-group">
+                        <span class="name-fbcoments">Eliana Maria</span>
+                        <span class="coment-fbcoments">Comprei o produto e estou utilizando, amando o resultado </span>
+
+                        <ul class="icons-sectioncoment">
+                            <li class="item-icon">Curtir</li>
+                            <li class="item-icon">Responder</li>
+                            <li class="item-icon"><i class="far fa-thumbs-up" id="likeicon"></i>7</li>
+                        </ul>
+
+                        <div class="coment-group-item">
+                            <div class="img-coment-group">
+                                <img src="../public/assets/img/fb2.jpg" alt="">
+                            </div>
+                            <div class="container-coment-group">
+                                <span class="name-fbcoments">Ana Regina Sousa</span>
+                                <span class="coment-fbcoments">Comprei o produto e estou utilizando, amando o resultado </span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="coment-group">
+                    <div class="img-coment-group">
+                        <img src="../public/assets/img/fb1.jpg" alt="">
+                    </div>
+                    <div class="container-coment-group">
+                        <span class="name-fbcoments">Roberto Carlos</span>
+                        <span class="coment-fbcoments">O melhor Produto que já vi! Amei<i class="fas fa-heart"></i> </span>
+                        <ul class="icons-sectioncoment">
+                            <li class="item-icon">Curtir</li>
+                            <li class="item-icon">Responder</li>
+                            <li class="item-icon"><i class="far fa-thumbs-up" id="likeicon"></i>4</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="coment-group">
+                    <div class="img-coment-group">
+                        <img src="../public/assets/img/fb1.jpg" alt="">
+                    </div>
+                    <div class="container-coment-group">
+                        <span class="name-fbcoments">Roberto Carlos</span>
+                        <span class="coment-fbcoments">O melhor Produto que já vi! Amei<i class="fas fa-heart"></i> </span>
+                        <ul class="icons-sectioncoment">
+                            <li class="item-icon">Curtir</li>
+                            <li class="item-icon">Responder</li>
+                            <li class="item-icon"><i class="far fa-thumbs-up" id="likeicon"></i>4</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </div>
+
     <div class="section-sale" id="section-sale">
         <div class="header-sale">
             <h1>ESCOLHA A MELHOR OFERTA PARA VOCÊ!</h1>
@@ -346,9 +436,7 @@
         </div>
     </div>
 
-    <div class="fb-coments">
-
-    </div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v12.0" nonce="0Bvf2aBA"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

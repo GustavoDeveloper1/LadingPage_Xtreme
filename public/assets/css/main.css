@@ -2209,7 +2209,7 @@ a {
         width: 100%;
         height: 100%;
     }
-    .section-howtouse .container-howtouse .howtouse-imgproduct .btn-section {
+    .section-howtouse .container-howtouse .howtouse-imgbtn .btn-section {
         width: 100%;
         height: auto;
         margin: auto;
@@ -2218,7 +2218,7 @@ a {
         align-items: center;
         justify-content: center
     }
-    .section-howtouse .container-howtouse .btn-section .buynow {
+    .section-howtouse .container-howtouse .howtouse-imgbtn .btn-section .buynow {
         width: auto;
         height: auto;
         padding: 10px;
