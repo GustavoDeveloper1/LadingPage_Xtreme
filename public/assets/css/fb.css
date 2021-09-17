@@ -4,14 +4,14 @@
     box-sizing: border-box;
 }
 
-.fb-coments{
+.fb-coments {
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
 }
 
-.fb-coments .coment-header{
+.fb-coments .coment-header {
     width: 100%;
     height: 50px;
     display: flex;
@@ -22,12 +22,13 @@
     border-bottom: 1px solid black;
 }
 
-.fb-coments .coment-header .coment-header-item{
+.fb-coments .coment-header .coment-header-item {
     list-style-type: none;
     padding: 5px;
+    cursor: pointer;
 }
 
-.fb-coments .header-fbcoments{
+.fb-coments .header-fbcoments {
     width: 80%;
     height: 80px;
     margin: 0px auto;
@@ -35,40 +36,45 @@
     align-items: center;
 }
 
-.fb-coments .header-fbcoments .image-header{
+.fb-coments .header-fbcoments .image-header {
     width: 30%;
     height: 80px;
 }
-.fb-coments .header-fbcoments .image-header img{
+
+.fb-coments .header-fbcoments .image-header img {
     height: 100%;
 }
 
 .fb-coments .header-fbcoments .container-header {
     width: 70%;
-    height:80px;
+    height: 80px;
     display: flex;
     flex-direction: column;
 }
 
-.fb-coments .header-fbcoments .container-header .input-header-coment{
+.fb-coments .header-fbcoments .container-header .input-header-coment {
     width: 100%;
     height: 80%;
 }
-.fb-coments .header-fbcoments .container-header .input-header-coment input{
+
+.fb-coments .header-fbcoments .container-header .input-header-coment input {
     width: 100%;
     height: 100%;
 }
-.fb-coments .header-fbcoments .container-header .input-header-coment::placeholder{
+
+.fb-coments .header-fbcoments .container-header .input-header-coment::placeholder {
     font-size: .8rem;
     text-align: center;
 }
 
-.fb-coments .container-fbcoments{
+.fb-coments .container-fbcoments {
     width: 80%;
     height: auto;
     margin: 10px auto;
+    margin-bottom: 30px;
 }
-.fb-coments .container-fbcoments .coment-group{
+
+.fb-coments .container-fbcoments .coment-group {
     width: 90%;
     height: auto;
     display: flex;
@@ -77,50 +83,54 @@
     /* align-items: center; */
     justify-content: space-around;
 }
-.fb-coments .container-fbcoments .coment-group .img-coment-group{
+
+.fb-coments .container-fbcoments .coment-group .img-coment-group {
     width: 20%;
     height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.fb-coments .container-fbcoments .coment-group .img-coment-group img{
+
+.fb-coments .container-fbcoments .coment-group .img-coment-group img {
     height: 80%;
 }
 
-.fb-coments .container-fbcoments .coment-group .container-coment-group{
+.fb-coments .container-fbcoments .coment-group .container-coment-group {
     width: 70%;
     height: auto;
     display: flex;
     flex-direction: column;
 }
 
-.fb-coments .container-fbcoments .coment-group .container-coment-group .name-fbcoments{
+.fb-coments .container-fbcoments .coment-group .container-coment-group .name-fbcoments {
     color: #033e63;
     font-size: 1rem;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
-.fb-coments .container-fbcoments .coment-group .container-coment-group .coment-fbcoments{
+
+.fb-coments .container-fbcoments .coment-group .container-coment-group .coment-fbcoments {
     width: 90%;
     color: #000;
     font-size: 0.9rem;
     text-align: justify;
 }
 
-.fb-coments .container-fbcoments .coment-group .container-coment-group .icons-sectioncoment{
+.fb-coments .container-fbcoments .coment-group .container-coment-group .icons-sectioncoment {
     margin-top: 5px;
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-.fb-coments .container-fbcoments .coment-group .container-coment-group .icons-sectioncoment .item-icon{
+
+.fb-coments .container-fbcoments .coment-group .container-coment-group .icons-sectioncoment .item-icon {
     list-style-type: none;
     font-size: .8rem;
     color: rgb(0, 89, 255);
 }
 
-.fb-coments .container-fbcoments .coment-group-item{
+.fb-coments .container-fbcoments .coment-group-item {
     width: 100%;
     height: auto;
     display: flex;
@@ -128,20 +138,148 @@
     /* align-items: center; */
     justify-content: space-around;
 }
-.fb-coments .container-fbcoments .coment-group-item .img-coment-group{
+
+.fb-coments .container-fbcoments .coment-group-item .img-coment-group {
     width: 20%;
     height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.fb-coments .container-fbcoments .coment-group-item .img-coment-group img{
+
+.fb-coments .container-fbcoments .coment-group-item .img-coment-group img {
     height: 80%;
 }
-.fb-coments .container-fbcoments .coment-group-item .container-coment-group .coment-fbcoments{
+
+.fb-coments .container-fbcoments .coment-group-item .container-coment-group .coment-fbcoments {
     width: 80%;
     color: #000;
     font-size: 0.8rem;
     text-align: justify;
     margin-bottom: 5px;
+}
+
+@media(min-width:720px) {
+    .fb-coments {
+        width: 90%;
+        margin: 20px auto;
+        background-color: #f1f1f1;
+    }
+    .fb-coments .coment-header {
+        width: 80%;
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 30px auto;
+        border-top: 1px solid black;
+    }
+    .fb-coments .header-fbcoments {
+        width: 80%;
+        height: auto;
+        margin: 0px auto;
+        display: flex;
+        align-items: center;
+    }
+    .fb-coments .header-fbcoments .image-header {
+        width: 20%;
+        height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .fb-coments .header-fbcoments .image-header img {
+        height: 100%;
+    }
+    .fb-coments .header-fbcoments .container-header .input-header-coment {
+        width: 100%;
+        height: 100%;
+    }
+    .fb-coments .header-fbcoments .container-header .input-header-coment input {
+        width: 100%;
+        height: 100%;
+    }
+    .fb-coments .container-fbcoments {
+        width: 80%;
+        height: auto;
+        margin: 40px auto;
+        margin-bottom: 80px;
+    }
+    .fb-coments .container-fbcoments .coment-group {
+        width: 80%;
+        height: auto;
+        display: flex;
+        margin: 10px auto;
+        background-color: #e4e4e4;
+        border-bottom: 1px solid rgb(146, 146, 146);
+        /* align-items: center; */
+        justify-content: space-evenly;
+    }
+    .fb-coments .container-fbcoments .coment-group .img-coment-group {
+        width: 10%;
+        height: 60px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    .fb-coments .container-fbcoments .coment-group .img-coment-group img {
+        height: 80%;
+    }
+    .fb-coments .container-fbcoments .coment-group .container-coment-group {
+        width: 70%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        justify-content: center;
+    }
+    .fb-coments .container-fbcoments .coment-group .container-coment-group .name-fbcoments {
+        color: #033e63;
+        font-size: 1.2rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+    .fb-coments .container-fbcoments .coment-group .container-coment-group .coment-fbcoments {
+        width: 90%;
+        color: #000;
+        font-size: 1rem;
+        text-align: justify;
+    }
+    .fb-coments .container-fbcoments .coment-group .container-coment-group .icons-sectioncoment {
+        margin-top: 5px;
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .fb-coments .container-fbcoments .coment-group .container-coment-group .icons-sectioncoment .item-icon {
+        list-style-type: none;
+        font-size: 1rem;
+        color: rgb(0, 89, 255);
+        cursor: pointer;
+    }
+    .fb-coments .container-fbcoments .coment-group-item {
+        width: 80%;
+        height: auto;
+        display: flex;
+        margin: 10px auto;
+        justify-content: space-evenly;
+    }
+    .fb-coments .container-fbcoments .coment-group-item .img-coment-group {
+        width: 10%;
+        height: 60px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        right: 0;
+    }
+    .fb-coments .container-fbcoments .coment-group-item .img-coment-group img {
+        height: 80%;
+    }
+    .fb-coments .container-fbcoments .coment-group-item .container-coment-group .coment-fbcoments {
+        width: 80%;
+        color: #000;
+        font-size: 0.8rem;
+        text-align: justify;
+        margin-bottom: 5px;
+    }
 }
