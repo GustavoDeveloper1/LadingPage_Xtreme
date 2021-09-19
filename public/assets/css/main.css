@@ -723,6 +723,7 @@ a {
         height: 100vh;
         display: flex;
         flex-direction: column;
+        margin-bottom: 50px;
     }
     .section-sale .header-sale {
         width: 90%;
@@ -844,6 +845,71 @@ a {
         color: #fff;
         border-radius: 10px;
     }
+    .wrapper-coments {
+        width: 100%;
+        height: 100vh;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #0074ba;
+        position: relative;
+    }
+    .wrapper-coments .header-coments {
+        width: 80%;
+        height: auto;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wrapper-coments .header-coments h1{
+        color: #fff;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .wrapper-coments .header-coments p{
+        color: #fff;
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .container-carousel{
+        width: 50%;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+    }
+    .container-carousel    .carousel{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 30px;
+
+  }
+  .carousel .card{
+    background-color: transparent;
+    width: 80%;
+    height: auto;
+    margin: 20px auto;
+    display: flex;
+    border: none;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  .card img{
+      width: 90% !important;
+      height: 600px !important;
+      border-radius: 15px;
+  }
+  .owl-dots{
+    display: none;
+}
+    .wraper-conf{
+        width: 100%;
+        height: 50vh;
+    }
 }
 
 @media (max-width: 420px) {
@@ -893,6 +959,7 @@ a {
         font-weight: 700;
         text-align: center;
     }
+    
 }
 
 @media(max-width:920px) {
@@ -1674,6 +1741,58 @@ a {
         color: #fff;
         border-radius: 10px;
     }
+    .wrapper-coments {
+        width: 100%;
+        height: 100vh;
+        margin: 0px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #0074ba;
+    }
+    .header-coments{
+        margin-top: 20px;
+        width: 80%;
+        height: auto;
+    }
+    .header-coments h1{
+        color: #fff;
+        text-align: center;
+        font-size: 2rem;
+        font-family: 'Roboto',sans-serif;
+    }
+    .header-coments p{
+        color: #fff;
+        text-align: center;
+        margin: 5px;
+        font-size: 1.4rem;
+    } 
+        .container-carousel{
+            width: 80%;
+            height: 80vh;
+        }
+         .carousel{
+        max-width: 1200px;
+        margin: auto;
+        padding: 0 30px;
+      }
+      .carousel .card{
+        color: #fff;
+        text-align: center;
+        margin: 20px 0;
+        line-height: 250px;
+        font-size: 90px;
+        font-weight: 600;
+        border-radius: 10px;
+        box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+      }
+      .owl-dots{
+        display: none;
+      }
+      .wraper-conf{
+        width: 100%;
+        height: 20vh;
+    }
 }
 
 @media(max-width:720px) {
@@ -2424,4 +2543,59 @@ a {
         color: #fff;
         border-radius: 10px;
     }
+
+    /*coments wpp area*/
+    .wrapper-coments {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0074ba;
 }
+.header-coments{
+    margin-top: 20px;
+    width: 80%;
+    height: auto;
+}
+.header-coments h1{
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Roboto',sans-serif;
+}
+.header-coments p{
+    color: #fff;
+    text-align: center;
+    margin: 5px;
+    font-size: 1.4rem;
+} 
+    .container-carousel{
+        width: 80%;
+        height: 80vh;
+    }
+     .carousel{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 30px;
+  }
+  .carousel .card{
+    color: #fff;
+    text-align: center;
+    margin: 20px 0;
+    line-height: 250px;
+    font-size: 90px;
+    font-weight: 600;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+  }
+  .owl-dots{
+display: none;
+  }
+
+  .wraper-conf{
+    width: 100%;
+    height: 20vh;
+}
+}
+
