@@ -720,10 +720,9 @@ a {
     }
     .section-sale {
         width: 100%;
-        height: 100vh;
+        height: auto;
         display: flex;
         flex-direction: column;
-        margin-bottom: 50px;
     }
     .section-sale .header-sale {
         width: 90%;
@@ -749,19 +748,20 @@ a {
     .section-sale .container-sale {
         width: 90%;
         height: 80vh;
-        margin: 0px auto;
+        margin: auto;
+        margin-bottom: 50px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
         gap: 20px;
     }
     .section-sale .container-sale .sale-item {
-        width: 300px;
+        width: auto;
         height: auto;
-        border: 5px solid #033e63;
+        background-color: #e7e7e7;
         display: flex;
         flex-direction: column;
-        /* justify-content: center; */
+        border-radius: 15px;
         align-items: center;
     }
     .section-sale .container-sale .sale-item .header-sale-item {
@@ -794,7 +794,7 @@ a {
         align-items: center;
     }
     .section-sale .container-sale .sale-item .image-product img {
-        width: 80%;
+        height: 80%;
     }
     .section-sale .container-sale .sale-item .price-product {
         width: 90%;
@@ -840,15 +840,26 @@ a {
         align-items: center;
     }
     .section-sale .container-sale .btn-buy .buy {
-        padding: 30px 40px;
+        padding: 20px 30px;
         background-color: #033e63;
         color: #fff;
+        font-size: 1.2rem;
+        font-weight: 700;
         border-radius: 10px;
     }
+
+    .section-sale .container-sale .btn-buy .description-sale{
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .section-sale .container-sale .btn-buy .description-sale img{
+        width: 100%;
+    }
+
     .wrapper-coments {
         width: 100%;
         height: 100vh;
-        margin: 20px auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -910,6 +921,72 @@ a {
         width: 100%;
         height: 50vh;
     }
+
+    .section-howbuy{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #0074ba;
+    }
+    
+    .section-howbuy .header-howbuy{
+        width: 80%;
+        height: auto;
+        margin: 20px auto;
+    }
+    
+    .section-howbuy .header-howbuy h1{
+        color: #fff;
+        font-family: 'Roboto',sans-serif;
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    .section-howbuy .container-howbuy{
+        width: 80%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr ;
+        gap: 20px;
+    }
+    
+    .section-howbuy .container-howbuy .howbuy-item{
+        width: auto;
+        height: 250px;
+        background-color: #033e63;
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+    }
+    
+    .section-howbuy .container-howbuy .howbuy-item .image-howbuy{
+        width: 80%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px auto;
+    }
+    
+    .section-howbuy .container-howbuy .howbuy-item .image-howbuy img{
+        height: 80%;
+    }
+    #icon-howbuy {
+        font-size: 4rem;
+        color: #fff;
+    }
+     
+     .section-howbuy .container-howbuy .howbuy-item .text-howbuy {
+         width: 80%;
+         color: #fff;
+         text-align: center;
+         margin: 0px auto;
+         font-size: 1.3rem;
+     }
+    
 }
 
 @media (max-width: 420px) {
@@ -959,6 +1036,71 @@ a {
         font-weight: 700;
         text-align: center;
     }
+    .section-howbuy{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #0074ba;
+    }
+    
+    .section-howbuy .header-howbuy{
+        width: 80%;
+        height: auto;
+        margin: 20px auto;
+    }
+    
+    .section-howbuy .header-howbuy h1{
+        color: #fff;
+        font-family: 'Roboto',sans-serif;
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    .section-howbuy .container-howbuy{
+        width: 80%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+    }
+    
+    .section-howbuy .container-howbuy .howbuy-item{
+        width: auto;
+        height: 250px;
+        background-color: #033e63;
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+    }
+    
+    .section-howbuy .container-howbuy .howbuy-item .image-howbuy{
+        width: 80%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px auto;
+    }
+    
+    .section-howbuy .container-howbuy .howbuy-item .image-howbuy img{
+        height: 80%;
+    }
+    #icon-howbuy {
+        font-size: 4rem;
+        color: #fff;
+    }
+     
+     .section-howbuy .container-howbuy .howbuy-item .text-howbuy {
+         width: 80%;
+         color: #fff;
+         text-align: center;
+         margin: 0px auto;
+         font-size: 1.3rem;
+     }
+    
     
 }
 
@@ -1654,7 +1796,7 @@ a {
     }
     .section-sale .container-sale .sale-item {
         width: 100%;
-        border: 5px solid #033e63;
+        background-color: #e7e7e7;
         height: 100vh;
         display: flex;
         margin: 10px auto;
@@ -1741,9 +1883,17 @@ a {
         color: #fff;
         border-radius: 10px;
     }
+    .section-sale .container-sale .btn-buy .description-sale{
+        margin-top: 10px;
+        width: 80%;
+        height: auto;
+    }
+    .section-sale .container-sale .btn-buy .description-sale img{
+        width: 100%;
+    }
     .wrapper-coments {
         width: 100%;
-        height: 100vh;
+        height: auto;
         margin: 0px auto;
         display: flex;
         flex-direction: column;
@@ -1793,6 +1943,73 @@ a {
         width: 100%;
         height: 20vh;
     }
+
+    .section-howbuy{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #0074ba;
+    }
+    
+    .section-howbuy .header-howbuy{
+        width: 80%;
+        height: auto;
+        margin: 20px auto;
+    }
+    
+    .section-howbuy .header-howbuy h1{
+        color: #fff;
+        font-family: 'Roboto',sans-serif;
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    .section-howbuy .container-howbuy{
+        width: 80%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+    }
+    
+    .section-howbuy .container-howbuy .howbuy-item{
+        width: auto;
+        height: 250px;
+        background-color: #033e63;
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+    }
+    
+    .section-howbuy .container-howbuy .howbuy-item .image-howbuy{
+        width: 80%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px auto;
+    }
+    
+    .section-howbuy .container-howbuy .howbuy-item .image-howbuy img{
+        height: 80%;
+    }
+    #icon-howbuy {
+        font-size: 4rem;
+        color: #fff;
+    }
+     
+     .section-howbuy .container-howbuy .howbuy-item .text-howbuy {
+         width: 80%;
+         color: #fff;
+         text-align: center;
+         margin: 0px auto;
+         font-size: 1.3rem;
+     }
+    
+    
 }
 
 @media(max-width:720px) {
@@ -2456,7 +2673,7 @@ a {
     }
     .section-sale .container-sale .sale-item {
         width: 100%;
-        border: 5px solid #033e63;
+        background-color: #e7e7e7;
         height: 100vh;
         display: flex;
         margin: 10px auto;
@@ -2494,9 +2711,8 @@ a {
         justify-content: center; */
     }
     .section-sale .container-sale .sale-item .image-product img {
-        width: 80%;
-        height: 90%;
-        margin: auto;
+        height: 80%;
+
     }
     .section-sale .container-sale .sale-item .price-product {
         width: 90%;
@@ -2597,5 +2813,97 @@ display: none;
     width: 100%;
     height: 20vh;
 }
+
+.section-howbuy{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0074ba;
+}
+
+.section-howbuy .header-howbuy{
+    width: 80%;
+    height: auto;
+    margin: 20px auto;
+}
+
+.section-howbuy .header-howbuy h1{
+    color: #fff;
+    font-family: 'Roboto',sans-serif;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.section-howbuy .container-howbuy{
+    width: 80%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.section-howbuy .container-howbuy .howbuy-item{
+    width: auto;
+    height: 250px;
+    background-color: #033e63;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.section-howbuy .container-howbuy .howbuy-item .image-howbuy{
+    width: 80%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+}
+
+.section-howbuy .container-howbuy .howbuy-item .image-howbuy img{
+    height: 80%;
+}
+#icon-howbuy {
+    font-size: 4rem;
+    color: #fff;
+}
+ 
+ .section-howbuy .container-howbuy .howbuy-item .text-howbuy {
+     width: 80%;
+     color: #fff;
+     text-align: center;
+     margin: 0px auto;
+     font-size: 1.3rem;
+ }
+
+ .section-faq{
+     width: 100%;
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ li{
+     list-style-type:none ;
+ }
+
+ .section-faq .container-faq{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #dadada;
+ }
+
+ .section-faq .container-faq .faq-item{
+     padding: 10px;
+     border-bottom: 1px solid #dadada;
+ }
 }
 
